@@ -3,6 +3,17 @@
 # numbers, inclusive.
 
 def sum_of_range(array)
+  array.sort!
+  last_num = array.last
+  counter = array[0]
+  sum = 0
+
+  while last_num >= counter
+    sum += counter
+    counter += 1
+  end
+
+  return sum
 
 end
 
